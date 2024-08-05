@@ -12,7 +12,9 @@ import pandas as pd
 df = pd.read_csv('Online Sales Data.csv', encoding='latin1')
 
 # Load and preprocess the data
-df = pd.read_csv(r"C:\Users\archa\OneDrive\Desktop\internship\Task1\Online Sales Data.csv", encoding='latin1')
+# df = pd.read_csv(r"C:\Users\archa\OneDrive\Desktop\internship\Task1\Online Sales Data.csv", encoding='latin1')
+df = pd.read_csv(r"C:\Users\archa\OneDrive\Desktop\internship\Task1\my_flask_project\Online Sales Data.csv", encoding='latin1')
+
 df.drop(['Transaction ID', 'Date', 'Product Name'], axis=1, inplace=True)
 x = df.drop('Total Revenue', axis=1)
 y = df['Total Revenue']
