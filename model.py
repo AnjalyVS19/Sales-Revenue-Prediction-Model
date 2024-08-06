@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 
 # Use the correct relative or absolute path to your CSV file
-df = pd.read_csv('Online Sales Data.csv', encoding='latin1')
+# df = pd.read_csv('Online Sales Data.csv', encoding='latin1')
 
 # Load and preprocess the data
 # df = pd.read_csv(r"C:\Users\archa\OneDrive\Desktop\internship\Task1\Online Sales Data.csv", encoding='latin1')
