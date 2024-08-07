@@ -7,6 +7,13 @@ from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split
 import pandas as pd
+import joblib
+
+# Save the trained model
+joblib.dump(model, 'model.pkl')
+
+# Load the model later
+model = joblib.load('model.pkl')
 
 # Use the correct relative or absolute path to your CSV file
 # df = pd.read_csv('Online Sales Data.csv', encoding='latin1')
